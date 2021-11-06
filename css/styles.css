@@ -58,7 +58,7 @@ body {
 /* -------------MAIN------------------ */
 /* ----Решения для бизнеса--- */
 .solutions {
-  background-color: teal;
+  background-color: tomato;
 }
 
 .solutions-title {
@@ -70,8 +70,12 @@ body {
   color: var(--third-color);
 }
 
-button {
+.solutions button {
+  font-family: inherit;
+  font-weight: 700;
   cursor: pointer;
+  color: var(--third-color);
+  background-color: var(--accent-color);
 }
 
 /* ----Наши особенности----*/
@@ -142,4 +146,40 @@ address {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+/* ----------Portfolio------------ */
+.portfolio button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+.portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.portfolio .text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+
+.portfolio button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
