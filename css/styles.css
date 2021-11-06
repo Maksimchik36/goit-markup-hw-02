@@ -183,3 +183,9 @@ address {
   background-color: #f5f4fa;
   cursor: pointer;
 }
+
+.portfolio button:hover,
+.portfolio button:focus {
+  color: var(--third-color);
+  background-color: var(--accent-color);
+}
