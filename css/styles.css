@@ -2,7 +2,7 @@
   --main-color: #212121;
   --second-color: #757575;
   --third-color: #ffffff;
-  --accent-color: #2196f3;
+  --accent-color: hsl(207, 90%, 54%);
 }
 
 body {
@@ -10,6 +10,7 @@ body {
   color: var(--main-color);
   background-color: #ffffff;
 }
+
 /* -------HEADER----- */
 /*----отключение подчеркивания в ссылках----*/
 .link {
@@ -29,9 +30,11 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 }
+
 .logo > span {
   color: var(--accent-color);
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -39,6 +42,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
+
+/* Выделено назывние текущей страницы */
 .nav-link.current {
   color: var(--accent-color);
 }
@@ -51,14 +56,20 @@ body {
   color: var(--second-color);
 }
 
+/* Подсветка интерактивных элементов при наведении */
 .header a:hover,
-.header a:focus {
+.header a:focus,
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
+
 /* -------------MAIN------------------ */
 /* ----Решения для бизнеса--- */
+
 .solutions {
   background-color: tomato;
+  /* временный фон */
 }
 
 .solutions-title {
@@ -93,6 +104,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
+
 /* ----Наша специализация---- */
 .specialization-title {
   font-weight: 700;
@@ -100,6 +112,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+
 /* ----Наша команда---- */
 .team-title {
   font-weight: 700;
@@ -114,16 +127,19 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .team-positions {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
+
 /* ---footer--- */
 footer {
   background-color: #2f303a;
 }
+
 footer .logo {
   font-weight: 700;
   font-size: 26px;
@@ -131,31 +147,35 @@ footer .logo {
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
+
 address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--third-color);
 }
+
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-}
 
 /* ----------Portfolio------------ */
+
 .portfolio button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
+
 .portfolio .title {
   font-weight: 700;
   font-size: 18px;
@@ -172,20 +192,13 @@ address {
   color: var(--second-color);
 }
 
-.portfolio button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  background-color: #f5f4fa;
-  cursor: pointer;
-}
-
 .portfolio button:hover,
 .portfolio button:focus {
   color: var(--third-color);
   background-color: var(--accent-color);
+}
+
+/* Удаляет элементы из видимой структуры HTML-кода, без потери логической структурной разметки, которая очень важна для "читалок" */
+.invisible {
+  visibility: hidden;
 }
