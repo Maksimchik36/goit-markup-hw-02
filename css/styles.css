@@ -68,8 +68,7 @@ body {
 /* ----Решения для бизнеса--- */
 
 .solutions {
-  background-color: tomato;
-  /* временный фон */
+  background-color: #2f303a;
 }
 
 .solutions-title {
@@ -84,6 +83,9 @@ body {
 .solutions button {
   font-family: inherit;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--third-color);
   background-color: var(--accent-color);
@@ -202,9 +204,19 @@ address {
 }
 
 /* Удаляет элементы из видимой структуры HTML-кода, без потери логической структурной разметки, которая очень важна для "читалок" */
-.invisible {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+
 
 /* Сброс наклонного шрифта, который автоматом ставится в этом тэге */
 address {
